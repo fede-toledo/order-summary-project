@@ -1,0 +1,140 @@
+$primaryColor: hsl(245, 75%, 52%);
+$secondaryColor: hsla(223, 47%, 23%, 1);
+$textColor: hsla(224, 23%, 55%, 1);
+$primaryBgColor: hsla(225, 100%, 98%, 1);
+$boxShadowColor: rgba(118, 108, 241, 0.4);
+$hoverColor: hsla(245, 83%, 68%, 1);
+$mainBgColor: hsla(225, 100%, 94%, 1);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $textColor;
+    background: $mainBgColor;
+
+    h1{
+        font-size: 1.563rem;
+        line-height: 1.3rem;
+        color: $secondaryColor;
+    }
+
+    h2{
+        font-size: 1.25rem;
+        line-height: 1.3rem;
+        color: $secondaryColor
+    }
+
+    .btn {
+        padding: 15px 20px;
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 5px;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn-primary {
+        background-color: $primaryColor;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 10px 40px $boxShadowColor;
+        &:hover {
+            background-color: $hoverColor;
+        }
+    }
+    .btn-secondary{
+        text-decoration: none;
+        color: $textColor;
+        font-weight: 900;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+    .btn-link {
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    .hero-section{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0;;
+
+        .card-wrapper{
+            width: 85%;
+            background-color: #fff;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px $boxShadowColor;
+            overflow: hidden;
+            text-align: center;
+
+            .header {
+                background-image: url(../images/illustration-hero.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 180px;
+            }
+
+            .content{
+                padding: 30px 25px;
+
+                .intro{
+                    margin-bottom: 30px;
+                    .title{
+                        margin-bottom: 30px;
+                    }
+                }
+                .pricing {
+                    background-color: $primaryBgColor;
+                    padding: 15px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    .plan{
+                        display: flex;
+                        align-items: center;
+                        .avatar{
+                            margin-right: 10px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .info{
+                            .name{
+                                color: $secondaryColor;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px){
+    .hero-section {
+        background-color: hsla(225, 100%, 94%, 1);
+        background-image: url(../images/pattern-background-desktop.svg)!important;
+        background-repeat: no-repeat;
+
+
+        .card-wrapper{
+            max-width: 400px;
+        }
+    }
+}

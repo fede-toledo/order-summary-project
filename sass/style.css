@@ -1,0 +1,43 @@
+* { box-sizing: border-box; margin: 0; }
+
+body { font-family: 'Red Hat Display', sans-serif; font-size: 16px; line-height: 26px; font-weight: 500; color: #7280a7; background: #e0e8ff; }
+
+body h1 { font-size: 1.563rem; line-height: 1.3rem; color: #1f2f56; }
+
+body h2 { font-size: 1.25rem; line-height: 1.3rem; color: #1f2f56; }
+
+body .btn { padding: 15px 20px; border-radius: 10px; display: block; margin-bottom: 5px; transition: all .2s ease-in-out; }
+
+body .btn-primary { background-color: #3829e0; color: white; text-decoration: none; box-shadow: 0 10px 40px rgba(118, 108, 241, 0.4); }
+
+body .btn-primary:hover { background-color: #756af1; }
+
+body .btn-secondary { text-decoration: none; color: #7280a7; font-weight: 900; }
+
+body .btn-secondary:hover { color: #756af1; }
+
+body .btn-link:hover { color: #756af1; }
+
+body .hero-section { background-image: url(../images/pattern-background-mobile.svg); background-size: 100%; background-position: top; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; padding: 3em 0; }
+
+body .hero-section .card-wrapper { width: 85%; background-color: #fff; margin: 0 auto; border-radius: 20px; box-shadow: 0 10px 40px rgba(118, 108, 241, 0.4); overflow: hidden; text-align: center; }
+
+body .hero-section .card-wrapper .header { background-image: url(../images/illustration-hero.svg); background-size: cover; background-repeat: no-repeat; height: 180px; }
+
+body .hero-section .card-wrapper .content { padding: 30px 25px; }
+
+body .hero-section .card-wrapper .content .intro { margin-bottom: 30px; }
+
+body .hero-section .card-wrapper .content .intro .title { margin-bottom: 30px; }
+
+body .hero-section .card-wrapper .content .pricing { background-color: #f5f7ff; padding: 15px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+
+body .hero-section .card-wrapper .content .pricing .plan { display: flex; align-items: center; }
+
+body .hero-section .card-wrapper .content .pricing .plan .avatar { margin-right: 10px; display: flex; align-items: center; }
+
+body .hero-section .card-wrapper .content .pricing .plan .info .name { color: #1f2f56; font-weight: 700; }
+
+@media (min-width: 700px) { .hero-section { background-color: #e0e8ff; background-image: url(../images/pattern-background-desktop.svg) !important; background-repeat: no-repeat; }
+  .hero-section .card-wrapper { max-width: 400px; } }
+/*# sourceMappingURL=style.css.map */
